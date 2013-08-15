@@ -1,0 +1,83 @@
+#cssmenu ul {
+	margin:7px 5px; 
+	padding: 7px 3px 0; 
+	background:none; 
+	line-height: 100%; 
+	border-radius: 1em; 
+	font: normal .8em/1.5em Arial, Helvetica, sans-serif; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+}
+#cssmenu li {
+	margin: 0 6px; 
+	padding: 0 0 8px; 
+	font-size:12px;
+	float: left; 
+	position: relative; 
+	list-style: none; }
+#cssmenu a,
+#cssmenu a:link {
+	font-weight: bold; 
+	color:	#fff; 
+	text-decoration: none; 
+	display: block; 
+	padding:  8px 10px; 
+	margin: 0; 
+	border-radius: 5px; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px;	 
+}
+#cssmenu a:hover {
+	background: #000; color: #fff;}
+#cssmenu .active a, 
+#cssmenu li:hover > a {
+	background:rgba(255, 255, 255, 0.9); 
+	color: #444;  
+}
+#cssmenu ul ul li:hover a,
+#cssmenu li:hover li a {
+	background: none; 
+	border: none; 
+	color: #fff; 
+	-webkit-box-shadow: none; 
+	-moz-box-shadow: none;}
+#cssmenu ul ul a:hover {
+	background: #8f8f8f; 
+	color: #fff !important; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+}
+#cssmenu li:hover > ul {
+	display: block;}
+#cssmenu ul ul {
+	display: none; 
+	margin: 0; 
+	padding: 0; 
+	width: 185px; 
+	position: absolute; 
+	top: 40px; 
+	left: 0; 
+	background: #ddd; 
+	-webkit-border-radius: 5px; 
+	-moz-border-radius: 5px; 
+	border-radius: 5px; 
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3); 
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .3); 
+	box-shadow: 0 1px 3px rgba(0,0,0, .3);}
+#cssmenu ul ul li {
+	float: none; margin: 0; 
+	padding: 3px; }
+#cssmenu ul ul a {
+	font-weight: normal; 
+	text-shadow: 0 1px 0 #fff; }
+#cssmenu ul:after {
+	content: '.'; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0;}
+* html #cssmenu  ul {
+	height: 1%;}
